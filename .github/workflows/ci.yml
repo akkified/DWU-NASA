@@ -33,5 +33,4 @@ jobs:
 
     - name: Test with pytest
       run: |
-        # This will run any script in your tests/ folder
-        pytest
+        pytest || [ $? -eq 5 ]

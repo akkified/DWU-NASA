@@ -1,0 +1,22 @@
+# NASA Pest Drone - Model Metadata
+model_version: 1.0.0
+date_trained: 2025-12-25
+architecture: YOLOv8s
+classes:
+  - 0: jassid_damage
+
+performance_metrics:
+  map_50: 0.41
+  precision: 1.00
+  recall: 0.44
+
+training_context:
+  target_altitude_ft: 30
+  target_gsd_mm_px: 2.5  # Ground Sample Distance
+  input_size: 640
+  augmentation: "standard mosaic"
+
+deployment_recommendation:
+  inference_type: "SAHI (Sliced Aided Hyper Inference)"
+  slice_size: 416
+  overlap_ratio: 0.4

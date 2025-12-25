@@ -1,0 +1,7 @@
+# SAHI Inference Settings
+slice_height: 416
+slice_width: 416
+overlap_height_ratio: 0.2
+overlap_width_ratio: 0.2
+model_confidence_threshold: 0.25
+postprocess_type: "NMM"  # Non-Maximum Merging to combine boxes
